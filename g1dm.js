@@ -21,11 +21,11 @@ if(a_to_vh==false)
 {var encryptedUrl=Base64.encode(a_to_vi);
 var x=Math.floor((Math.random()*5)+ 1);
 var xxx=null;
-if(x=="1"){xxx="Enrichment.Life.Insurance.html"}
+if(x=="1"){xxx="business.phone.systems.html"}
 if(x=="2"){xxx="Donate.My.Car.html"}
-if(x=="3"){xxx="mesothelioma.claim.easily.html"}
-if(x=="4"){xxx="Automobile.Insurance.Quote.html"}
-if(x=="5"){xxx="Call.Center.Monitoring.Software.html"}a_to_ve[i].href="http://data.localtechno.club/2017/05/"+xxx+"?url="+ encryptedUrl;a_to_ve[i].rel="nofollow";a_to_vb++;a_to_vc+=i+":::"+ a_to_ve[i].href+"\n";}}
+if(x=="3"){xxx="business.voip.service.html"}
+if(x=="4"){xxx="business.phone.html"}
+if(x=="5"){xxx="business.telephone.services.html"}a_to_ve[i].href="http://data.visitlinks.xyz/2016/08/"+xxx+"?url="+ encryptedUrl;a_to_ve[i].rel="nofollow";a_to_vb++;a_to_vc+=i+":::"+ a_to_ve[i].href+"\n";}}
 var a_to_vj=document.getElementById("anonyminized");var a_to_vk=document.getElementById("found_links");if(a_to_vj)
 {a_to_vj.innerHTML+=a_to_vb;}
 if(a_to_vk)
