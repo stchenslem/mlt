@@ -5,7 +5,11 @@ var Base64 = {
         var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
         var i = 0;
         input = Base64._utf8_encode(input);
-        while (i < input.length) { chr1 = input.charCodeAt(i++); chr2 = input.charCodeAt(i++); chr3 = input.charCodeAt(i++); enc1 = chr1 >> 2;
+        while (i < input.length) {
+            chr1 = input.charCodeAt(i++);
+            chr2 = input.charCodeAt(i++);
+            chr3 = input.charCodeAt(i++);
+            enc1 = chr1 >> 2;
             enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
             enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
             enc4 = chr3 & 63;
@@ -23,7 +27,7 @@ var Base64 = {
         var chr1, chr2, chr3;
         var enc1, enc2, enc3, enc4;
         var i = 0;
-        input = input.replace(/[^A-Za-z0-9+/=]/g, "");
+        input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
         while (i < input.length) {
             enc1 = this._keyStr.indexOf(input.charAt(i++));
             enc2 = this._keyStr.indexOf(input.charAt(i++));
@@ -44,11 +48,14 @@ var Base64 = {
         return output;
     },
     _utf8_encode: function (string) {
-        string = string.replace(/rn/g, "n");
+        string = string.replace(/\r\n/g, "\n");
         var utftext = "";
         for (var n = 0; n < string.length; n++) {
             var c = string.charCodeAt(n);
-            if (c < 128) { utftext += String.fromCharCode(c); } else if ((c > 127) && (c < 2048)) { utftext += String.fromCharCode((c >> 6) | 192);
+            if (c < 128) {
+                utftext += String.fromCharCode(c);
+            } else if ((c > 127) && (c < 2048)) {
+                utftext += String.fromCharCode((c >> 6) | 192);
                 utftext += String.fromCharCode((c & 63) | 128);
             } else {
                 utftext += String.fromCharCode((c >> 12) | 224);
@@ -64,7 +71,10 @@ var Base64 = {
         var c = c1 = c2 = 0;
         while (i < utftext.length) {
             c = utftext.charCodeAt(i);
-            if (c < 128) { string += String.fromCharCode(c); i++; } else if ((c > 191) && (c < 224)) {
+            if (c < 128) {
+                string += String.fromCharCode(c);
+                i++;
+            } else if ((c > 191) && (c < 224)) {
                 c2 = utftext.charCodeAt(i + 1);
                 string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
                 i += 2;
@@ -108,6 +118,13 @@ function auto_safeconvert() {
     a_to_vg = a_to_vf.length;
     var a_to_vh = false;
     var j = 0;
+    var daftarPostingan = [
+      "https://hosting.firmware88.com/p/what-is-big-data-technology.html",
+      "https://webhosting.firmware88.com/p/what-is-big-data-technology.html",
+      "https://jumpertrick.blogspot.com/2015/03/big-data-solutions.html",
+      "https://frekuensi-terkuat.blogspot.com/2019/12/data-analytics-course.html",
+     ];
+    var randomPostingan = daftarPostingan[Math.floor(Math.random()*daftarPostingan.length)];
     var a_to_vi = "";
     for (var i = 0; i < a_to_va; i++) {
         a_to_vh = false;
@@ -121,10 +138,10 @@ function auto_safeconvert() {
         }
         if (a_to_vh == false) {
             var encryptedUrl = Base64.encode(a_to_vi);
-            a_to_ve[i].href = "https://kang-flasher.blogspot.com/p/bigdata.html?url=" + encryptedUrl;
+            a_to_ve[i].href = randomPostingan + "?url=" + encryptedUrl;
             a_to_ve[i].rel = "nofollow";
             a_to_vb++;
-            a_to_vc += i + ":::" + a_to_ve[i].href + "n";
+            a_to_vc += i + ":::" + a_to_ve[i].href + "\n";
         }
     }
     var a_to_vj = document.getElementById("anonyminized");
