@@ -1,5 +1,4 @@
-var Base64 = {
-    _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+var Base64 = { _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
     encode: function (input) {
         var output = "";
         var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
@@ -101,7 +100,6 @@ var a_to_vc = "";
 function auto_safelink() {
     auto_safeconvert();
 }
-
 function auto_safeconvert() {
     var a_to_vd = window.location.hostname;
     if (protected_links != "" && !protected_links.match(a_to_vd)) {
@@ -118,15 +116,13 @@ function auto_safeconvert() {
     a_to_vg = a_to_vf.length;
     var a_to_vh = false;
     var j = 0;
-    var daftarPostingan = [
-      "https://hosting.firmware88.com/p/what-is-big-data-technology.html",
+    var daftarPostingan = ["https://hosting.firmware88.com/p/what-is-big-data-technology.html",
       "https://webhosting.firmware88.com/p/what-is-big-data-technology.html",
       "https://jumpertrick.blogspot.com/2015/03/big-data-solutions.html",
-      "https://frekuensi-terkuat.blogspot.com/2019/12/data-analytics-course.html",
-     ];
-    var randomPostingan = daftarPostingan[Math.floor(Math.random()*daftarPostingan.length)];
-    var a_to_vi = "";
-    for (var i = 0; i < a_to_va; i++) {
+      "https://frekuensi-terkuat.blogspot.com/2019/12/data-analytics-course.html", ];
+     var randomPostingan = daftarPostingan[Math.floor(Math.random()*daftarPostingan.length)];
+     var a_to_vi = "";
+     for (var i = 0; i < a_to_va; i++) {
         a_to_vh = false;
         j = 0;
         while (a_to_vh == false && j < a_to_vg) {
