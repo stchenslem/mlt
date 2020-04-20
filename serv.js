@@ -117,9 +117,9 @@ function auto_safeconvert() {
     var a_to_vh = false;
     var j = 0;
     var daftarPostingan = ["https://hosting.firmware88.com/p/what-is-big-data-technology.html",
-      "https://webhosting.firmware88.com/p/what-is-big-data-technology.html",
+      "https://frekuensi-terkuat.blogspot.com/2019/12/data-analytics-course.html",
       "https://jumpertrick.blogspot.com/2015/03/big-data-solutions.html",
-      "https://frekuensi-terkuat.blogspot.com/2019/12/data-analytics-course.html", ];
+      "https://webhosting.firmware88.com/p/what-is-big-data-technology.html",];
      var randomPostingan = daftarPostingan[Math.floor(Math.random()*daftarPostingan.length)];
      var a_to_vi = "";
      for (var i = 0; i < a_to_va; i++) {
